@@ -3,9 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+import { CityPipe } from './pipes/city.pipe';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CityPipe
   ],
   imports: [
     BrowserModule

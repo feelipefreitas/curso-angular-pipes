@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'curso-angular-pipes';
+  users = [
+    { name: 'Joao', cityId: 1 },
+    { name: 'Laura', cityId: 2 },
+  ];
 }
