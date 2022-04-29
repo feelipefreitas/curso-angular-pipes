@@ -1,3 +1,4 @@
 <div *ngFor="let user of users">
-  <p>Nome: {{ user.name }} - Cidade: {{ user.cityId | city }}</p>
+  <!-- <p>Nome: {{ user.name }} - Cidade: {{ user.cityId | city }} - Status: {{ returnUserStatus(user.status) }}</p> -->
+  <p>Nome: {{ user.name }} - Cidade: {{ user.cityId | city }} - Status: {{ user.status | status }}</p>
 </div>

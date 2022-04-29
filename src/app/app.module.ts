@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 import { CityPipe } from './pipes/city.pipe';
+import { StatusPipe } from './pipes/status.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CityPipe
+    CityPipe,
+    StatusPipe
   ],
   imports: [
     BrowserModule
