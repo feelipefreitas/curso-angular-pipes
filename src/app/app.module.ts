@@ -6,14 +6,19 @@ import { AppComponent } from './app.component';
 import { CityPipe } from './pipes/city.pipe';
 import { StatusPipe } from './pipes/status.pipe';
 
+import { HttpClientModule } from '@angular/common/http';
+import { PostTitlePipe } from './pipes/post-title.pipe';
+
 @NgModule({
   declarations: [
     AppComponent,
     CityPipe,
-    StatusPipe
+    StatusPipe,
+    PostTitlePipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -2,3 +2,7 @@
   <!-- <p>Nome: {{ user.name }} - Cidade: {{ user.cityId | city }} - Status: {{ returnUserStatus(user.status) }}</p> -->
   <p>Nome: {{ user.name }} - Cidade: {{ user.cityId | city }} - Status: {{ user.status | status }}</p>
 </div>
+
+<div *ngFor="let post of posts">
+  <p>Id: {{ post.id }} - Título: {{ post.id | postTitle | async }}</p>
+</div>
